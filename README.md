@@ -14,6 +14,6 @@
  - Google Map & Login API
 
 ### 시장 조사
-![enter image description here](https://drive.google.com/file/d/19udeh8I2HMPi7wkiv292au1E-NDGUk02/view?usp=share_link)
+![](/img/1.jpg)
 
 
