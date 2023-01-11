@@ -13,9 +13,14 @@
  - Firebase : 채팅 & 스터디 & 중고 물품 저장
  - Google Map & Login API : 사용자 위치 확인 & 회원가입-로그인 과정
 
+<<<<<<< HEAD
 ### 시장 조사 & 문제점
 ![시장조사](/img/슬라이드2.JPG)
 ![경쟁사 분석](/img/슬라이드3.JPG)
+=======
+### 시장 조사
+![](/img/1.PNG)
+>>>>>>> c3eeeb8e6885889e9eb6c9f91e0e6a85637e514a
 
 
 ### Soft Engineering
