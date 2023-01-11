@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/Google_Login"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="450dp"></com.google.android.gms.common.SignInButton>
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="234dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ibm"
+        android:gravity="center"
+        android:text="스윗미에 가입하면 이용약관과 개인정보 취급방침에 동의하게 됩니다." />
+
+</LinearLayout>

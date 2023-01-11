@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:fontFamily="@font/ibm"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-61dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:fontFamily="@font/ibm"
+            android:layout_marginBottom="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="관심 직무 카테고리를 선택하세요"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ibm"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="경영/사무" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ibm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="마케팅/광고/홍보" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:fontFamily="@font/ibm"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IT/디지털" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:fontFamily="@font/ibm"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="디자인" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ibm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영업/고객/서비스" />
+
+        <CheckBox
+            android:id="@+id/checkBox6"
+            android:fontFamily="@font/ibm"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="무역유통" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ibm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="연구개발/서비스" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:fontFamily="@font/ibm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="건설/토목" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="119dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/sender_message_layout"
+            android:fontFamily="@font/ibm"
+            android:text="선택완료" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

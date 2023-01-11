@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:TagsEditText="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8CED5"
+    android:id="@+id/line11">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="45.6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_cover_image"
+                    android:layout_width="171.2dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:scaleType="center" />
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/round_upload_background">-->
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="19.2dp"/>-->
+            </RelativeLayout>
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 아이디           /        카테고리"
+                        android:textAlignment="center"
+                        android:background="#654C5B6C"
+                        android:fontFamily="@font/ibm"
+                        android:textColor="@color/white"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#6574889E"
+                        android:textColor="#494646"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/ibm"
+                        android:paddingTop="12dp"
+                        android:paddingBottom="12.4dp"
+                        android:singleLine="true"
+                        android:textSize="17.2sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp">
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#A6FAFBFB"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/ibm"
+                            android:layout_weight="1"
+                            android:text="내가 가입한 스터디" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:layout_marginTop="8.4dp" />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginTop="28.8dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:textColor="@color/color_06095e"-->
+                <!--android:text="날짜"-->
+                <!--/>-->
+
+                <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="17.2sp"-->
+                <!--android:textColor="@color/color_707070"-->
+                <!--android:textColorHint="@color/color_707070"-->
+                <!--android:hint=""-->
+                <!--android:background="@color/white"-->
+                <!--android:singleLine="true"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:layout_marginTop="12dp"/>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+
+                        <Button
+                            android:id="@+id/button1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:background="#A6FAFBFB"
+                            android:fontFamily="@font/ibm"
+                            android:layout_weight="1"
+                            android:text="위시리스트" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_studycafe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="#A6FAFBFB"
+                            android:layout_weight="1"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/ibm"
+                            android:text="포인트 관리" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="23.6dp">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/ibm"
+                        android:background="#A6FAFBFB"
+                        android:layout_height="wrap_content"
+                        android:text="로그아웃" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="23.6dp">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:background="#A6FAFBFB"
+                        android:fontFamily="@font/ibm"
+                        android:text="공지사항" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="23.6dp">
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/ibm"
+                        android:background="#A6FAFBFB"
+                        android:layout_height="wrap_content"
+                        android:text="이용약관/개인정보보호처리방침" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="23.6dp">
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:background="#A6FAFBFB"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/ibm"
+                        android:layout_height="wrap_content"
+                        android:text="탈퇴" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

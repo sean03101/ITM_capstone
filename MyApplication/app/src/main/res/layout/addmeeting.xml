@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:TagsEditText="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="45.6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#C5CDC0"
+                    android:text="면접 후기 등록"
+                    android:textSize="15.2sp" />
+
+            </LinearLayout>
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="194dp">
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/round_upload_background">-->
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="@font/ibm"
+                    android:text="면접 형식"
+                    android:textSize="15dp" />
+
+                <FrameLayout
+                    android:layout_width="385dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ibm"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp">
+
+                    <RadioGroup
+                        android:id="@+id/study_type"
+                        android:layout_width="291dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ibm">
+
+                        <RadioButton
+                            android:id="@+id/radioButton8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="인성면접" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton6"
+                            android:layout_width="117dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="PT면접" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="토론면접" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="임원면접" />
+
+                        <RadioButton
+                            android:id="@+id/radioButton7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="일반면접 " />
+                    </RadioGroup>
+
+                </FrameLayout>
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="19.2dp"/>-->
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp">
+
+                <TextView
+                    android:id="@+id/dash_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ibm"
+                    android:textSize="15.2sp"
+                    android:text="제목"
+                    />
+
+                <EditText
+                    android:id="@+id/et_aname"
+                    android:layout_below="@+id/textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15.2sp"
+
+                    android:hint="개인정보를 지우고 입력해주세요!"
+                    android:gravity="start"
+                    android:fontFamily="@font/ibm"
+                    android:background="@drawable/back"
+                    android:minHeight="20.2dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingStart="9.2dp"
+                    android:paddingEnd="9.2dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="17.6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/ibm"
+                            android:text="카테고리"
+                            android:textSize="15.2sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingTop="12dp">
+
+                            <Spinner
+                                android:id="@+id/spinner"
+                                android:layout_marginLeft="50dp"
+                                android:layout_width="100dp"
+                                android:fontFamily="@font/ibm"
+
+                                android:layout_height="wrap_content" />
+
+                            <Spinner
+                                android:id="@+id/spinner2"
+                                android:layout_width="100dp"
+                                android:fontFamily="@font/ibm"
+
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:text="카테고리 선택하러 가기" />
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.4dp"
+                            android:layout_marginTop="8.4dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:text="합불 여부"
+                        android:textSize="15.2sp" />
+
+                    <LinearLayout
+                        android:id="@+id/habbul"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <Switch
+                            android:id="@+id/switch_hab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Switch" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+
+
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginTop="28.8dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:textColor="@color/color_06095e"-->
+                <!--android:text="날짜"-->
+                <!--/>-->
+
+                <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="17.2sp"-->
+                <!--android:textColor="@color/color_707070"-->
+                <!--android:textColorHint="@color/color_707070"-->
+                <!--android:hint=""-->
+                <!--android:background="@color/white"-->
+                <!--android:singleLine="true"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:layout_marginTop="12dp"/>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:textSize="15.2sp"
+                        android:text="회사"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <Button
+                            android:id="@+id/tv_company"
+                            android:layout_width="142dp"
+                            android:layout_height="38dp"
+                            android:background="@drawable/rr"
+                            android:fontFamily="@font/ibm"
+
+                            android:text="회사 선택하기"
+                            android:textSize="17.2sp" />
+
+                        <TextView
+                            android:id="@+id/resulttext"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="@font/ibm"
+
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:text="면접 질문 "
+                        android:textSize="15.2sp" />
+
+                    <TextView
+                        android:id="@+id/warning_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/tv_textNumber"
+                        android:layout_marginRight="28dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_below="@+id/textview"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="면접 질문을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textview"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="9.2dp"
+                        android:text="지원자 대답"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+                        android:id="@+id/warning_description1"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber1"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber1"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description1"
+                        android:layout_below="@+id/textview1"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="생각나는 대답을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+
+
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/textview1"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:text="면접 질문 2 "
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/tv_textNumber3"
+                        android:layout_marginRight="28dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber3"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description22"
+                        android:layout_below="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:textSize="15.2sp"
+
+                        android:hint="면접 질문을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text1"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/ibm"
+
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text22"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:text="지원자 대답 2"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber22"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="-5dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber22"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description33"
+                        android:layout_below="@+id/text22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:fontFamily="@font/ibm"
+
+                        android:hint="생각나는 대답을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text22"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+                        android:fontFamily="@font/ibm"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="9.2dp"
+                        android:text="면접 질문 3 "
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber4"
+                        android:layout_marginRight="28dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_toLeftOf="@+id/tv_textNumber4"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description4"
+                        android:layout_below="@+id/text33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:fontFamily="@font/ibm"
+
+                        android:hint="면접 질문을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/text33"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="9.2dp"
+                        android:text="지원자 대답 3"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber5"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="-5dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber5"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description5"
+                        android:layout_below="@+id/text4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:fontFamily="@font/ibm"
+
+                        android:hint="생각나는 대답을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text4"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+                        android:fontFamily="@font/ibm"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:text="면접 질문 4 "
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber33"
+                        android:layout_marginRight="28dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_toLeftOf="@+id/tv_textNumber33"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description6"
+                        android:layout_below="@+id/text11"
+                        android:layout_width="match_parent"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="면접 질문을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text11"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_marginBottom="9.2dp"
+                        android:text="지원자 대답 4"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber2"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="-5dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_toLeftOf="@+id/tv_textNumber2"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description3"
+                        android:layout_below="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:fontFamily="@font/ibm"
+
+                        android:hint="생각나는 대답을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber2"
+                        android:layout_width="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text2"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ibm"
+
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text123"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:text="면접 질문 5 "
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber333"
+                        android:layout_marginRight="28dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_toLeftOf="@+id/tv_textNumber333"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description2"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/text123"
+                        android:fontFamily="@font/ibm"
+                        android:gravity="start"
+
+                        android:hint="면접 질문을 입력해주세요"
+                        android:minHeight="91.2dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingTop="10dp"
+
+                        android:paddingEnd="9.2dp"
+                        android:paddingBottom="10dp"
+                        android:textSize="15.2sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber333"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/text123"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/text222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:fontFamily="@font/ibm"
+
+                        android:text="지원자 대답 5"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:layout_alignBottom="@+id/tv_textNumber222"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber222"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description3333"
+                        android:layout_below="@+id/text222"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ibm"
+
+                        android:textSize="15.2sp"
+
+                        android:hint="생각나는 대답을 입력해주세요"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber222"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/text222"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+                        android:fontFamily="@font/ibm"
+
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_make"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="면접후기 올리기"
+        android:fontFamily="@font/ibm"
+        android:background="@drawable/back"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp" />
+
+</LinearLayout>

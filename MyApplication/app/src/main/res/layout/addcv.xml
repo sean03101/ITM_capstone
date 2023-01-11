@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:TagsEditText="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="45.6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="합격 자기소개서 등록"
+                    android:textSize="15.2sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+
+                    android:scaleType="center" />
+
+                <!--<RelativeLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:background="@drawable/round_upload_background">-->
+
+                <Button
+                    android:id="@+id/btn_upload"
+                    android:layout_width="171.2dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:lineSpacingExtra="1.8sp"
+                    android:text="+     합격 사진 업로드"
+                    android:textColor="@color/white"
+                    android:textSize="15.2sp"
+
+                    />
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:layout_centerVertical="true"-->
+                <!--android:paddingLeft="19.2dp"/>-->
+            </RelativeLayout>
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <TextView
+                        android:id="@+id/dash_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:text="제목"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_dashname"
+                        android:layout_below="@+id/textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="개인정보를 지우고 입력해주세요!"
+                        android:gravity="start"
+                        android:minHeight="20.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:text="카테고리"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="카테고리 선택하러 가기" />
+
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginTop="28.8dp">-->
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="15.2sp"-->
+                <!--android:textColor="@color/color_06095e"-->
+                <!--android:text="날짜"-->
+                <!--/>-->
+
+                <!--<EditText-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:textSize="17.2sp"-->
+                <!--android:textColor="@color/color_707070"-->
+                <!--android:textColorHint="@color/color_707070"-->
+                <!--android:hint=""-->
+                <!--android:background="@color/white"-->
+                <!--android:singleLine="true"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:layout_marginTop="12dp"/>-->
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="17.6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+                        android:text="회사"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/ll_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="12dp"
+                        android:gravity="center_vertical">
+
+                        <Button
+                            android:id="@+id/tv_company"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="회사 선택하러 가기"
+                            android:textSize="17.2sp" />
+
+                        <TextView
+                            android:id="@+id/resulttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_weight="1"
+                            android:text="TextView" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.4dp"
+                        android:layout_marginTop="8.4dp"
+                        />
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:text="질문 1"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+                        android:id="@+id/warning_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber"
+                        android:layout_marginRight="28dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description"
+                        android:layout_below="@+id/textview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="개인정보를 지우고 입력해주세요!"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textview"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="21.2dp">
+
+                    <TextView
+                        android:id="@+id/textview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="9.2dp"
+                        android:text="질문2"
+                        android:textSize="15.2sp" />
+
+                    <TextView
+                        android:id="@+id/warning_description1"
+                        android:layout_width="234dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/tv_textNumber1"
+                        android:layout_marginEnd="28dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="-5dp"
+                        android:layout_toLeftOf="@+id/tv_textNumber1"
+                        android:text="1000 자 이내로 입력해주세요"
+                        android:textSize="14sp"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/et_description1"
+                        android:layout_below="@+id/textview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15.2sp"
+
+                        android:hint="개인정보를 지우고 입력해주세요!"
+                        android:gravity="start"
+                        android:minHeight="91.2dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingStart="9.2dp"
+                        android:paddingEnd="9.2dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_textNumber1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textview1"
+                        android:layout_alignParentEnd="true"
+                        android:text="0 / 1000"
+
+                        android:textSize="11.2sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btn_make"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="자기소개서 등록하기"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp" />
+
+</LinearLayout>

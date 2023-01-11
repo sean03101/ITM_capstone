@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:id="@+id/map"
+        tools:context=".MapsActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+    <Button
+        android:text="주변 스터디 카페 검색"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/ibm"
+        android:background="#A1B6A2"
+        android:layout_weight="0.2"
+        android:textAlignment="center"
+
+        android:id="@+id/button"/>
+    <Button
+        android:text="내 위치 동기화"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fontFamily="@font/ibm"
+        android:background="#CCD3C7"
+        android:layout_weight="0.2"
+        android:id="@+id/button1"/>
+
+</LinearLayout>

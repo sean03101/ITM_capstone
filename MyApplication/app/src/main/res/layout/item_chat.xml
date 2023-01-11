@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/chatitem_imageview"/>
+
+    <RelativeLayout
+        android:layout_width="338dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/chatitem_textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm"
+            android:text="방 이름 "
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/chatitem_textview_lastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatitem_textview_title"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ibm"
+            android:text="마지막 메세지"
+            android:textColor="@drawable/item_color" />
+
+        <TextView
+            android:id="@+id/chatitem_textview_timestamp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/ibm"
+            android:text="2011.11.11 11:11"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</LinearLayout>

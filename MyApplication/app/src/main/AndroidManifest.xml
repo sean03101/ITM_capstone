@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity android:name=".GroupEditActivity"></activity>
+        <activity android:name=".GroupInfoActivity" />
+        <activity android:name=".GroupParticipantAddActivity" />
+        <activity
+            android:name=".GroupChattActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".CreateGroupActivity" />
+        <activity
+            android:name=".ChattActivity"
+            android:parentActivityName=".Chat" />
+        <activity android:name=".ProfileActivity" />
+        <activity
+            android:name=".FindFriendsActivity"
+            android:parentActivityName=".Chat" />
+        <activity android:name=".GroupChatActivity" />
+        <activity
+            android:name=".SettingsActivity"
+            android:parentActivityName=".Chat" />
+        <activity android:name=".Chat" />
+        <activity android:name=".ParsingModify" />
+        <activity android:name=".HomeActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC3o2jxpbUGnMeeDNkN49aQGzDGSw2ZJnM" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id"/>
+
+        <activity android:name=".ui.viewpage.viewpage1" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.Home" />
+                <action android:name="android.intent.action.Add" />
+                <action android:name="android.intent.action.parsing" />
+                <action android:name="android.intent.action.mypage" />
+                <action android:name="android.intent.action.Rule" />
+                <action android:name="android.intent.action.notice" />
+                <action android:name="android.intent.action.AddCV" />
+                <action android:name="android.intent.action.ParsingCV" />
+                <action android:name="android.intent.action.Parsingmeeting" />
+                <action android:name="android.intent.action.Addmeeting" />
+                <action android:name="android.intent.action.datePickerActivity" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".mypage.WishlistActivity"/>
+        <activity android:name=".ui.viewpage.viewpage2" />
+        <activity android:name=".ui.viewpage.viewpage3" />
+        <activity android:name=".ui.viewpage.viewpage4" />
+        <activity android:name=".ui.viewpage.viewpage5" />
+        <activity android:name=".ui.viewpage.viewpage6" />
+        <activity android:name=".ui.viewpage.viewpage7" />
+        <activity android:name=".ui.viewpage.viewpage8" />
+        <activity android:name=".ui.VIewpager.viewpager1" />
+        <activity android:name=".ui.VIewpager.viewpager2" />
+        <activity android:name=".ui.VIewpager.viewpager3" />
+        <activity android:name=".ui.VIewpager.viewpager4" />
+        <activity android:name=".ui.VIewpager.viewpager5" />
+        <activity android:name=".ui.VIewpager.viewpager6" />
+        <activity android:name=".ui.VIewpager.viewpager7" />
+        <activity android:name=".ui.VIewpager.viewpager8" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr1" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr2" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr3" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr4" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr5" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr6" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr7" />
+        <activity android:name=".viewpagerr.VIewpager.viewpagerr8" />
+
+        <activity android:name=".chat.GroupMessageActivity" />
+        <activity android:name=".SelectFriendActivity" />
+        <activity android:name=".chat.MessageActivity" />
+        <activity android:name=".chat.MessageActivity2" />
+        <activity android:name=".mypage.mypage" />
+        <activity android:name=".Chatting" />
+        <activity android:name=".Map" />
+        <activity android:name=".MapModify"/>
+        <activity android:name=".mypage.Rule" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".Parsing" />
+        <activity android:name=".ParsingCV" />
+        <activity android:name=".Parsingmeeting" />
+        <activity android:name=".StudydetailActivity" />
+        <activity android:name=".ADetailActivity" />
+        <activity android:name=".DashDetailActivity" />
+        <activity android:name=".StudyModifyActivity" />
+        <activity android:name=".mypage.Point" />
+        <activity android:name=".mypage.refund" />
+        <activity android:name=".mypage.charge" />
+        <activity android:name=".mypage.notice" />
+        <activity android:name=".AddCV" />
+        <activity android:name=".datePickerActivity" />
+        <activity android:name=".Addmeeting" />
+        <activity android:name=".SearchStudyActivity"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <service
+            android:name=".MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

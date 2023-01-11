@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="title_home">HOME</string>
+    <string name="title_dashboard">ADD</string>
+    <string name="title_calender">Calender</string>
+    <string name="title_chatting">Chatting</string>
+
+    <string name="admob_app_id">ca-app-pub-5437182903651991~3114191539</string>
+    <string name="banner_ad_unit_id">ca-app-pub-5437182903651991/8462242207</string>
+    <string name="banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_notification">Notification</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button">Button</string>
+    <string name="title_add">fragment_Add</string>
+
+    <string-array name="spinner_do">
+        <item>경영/사무</item>
+        <item>마케팅/광고/홍보</item>
+        <item>IT/디지털</item>
+        <item>디자인</item>
+        <item>영업/고객/서비스</item>
+        <item>무역유통</item>
+        <item>연구개발/설계</item>
+        <item>건설/토목</item>
+    </string-array>
+    <string-array name="spinner_do_manage">
+        <item>기획/전략/경영</item>
+        <item>사무/총무/법무</item>
+        <item>인사/노무/교육</item>
+        <item>경리/회계/결산</item>
+        <item>재무/세무</item>
+        <item>비서/안내</item>
+    </string-array>
+    <string-array name="spinner_do_marketing">
+        <item>마케팅/광고</item>
+        <item>홍보/PR</item>
+    </string-array>
+    <string-array name="spinner_do_it">
+        <item>웹 프로그램</item>
+        <item>시스템 프로그램</item>
+        <item>DBA/데이터베이스</item>
+        <item>네트워크/서버/보안</item>
+        <item>기획/PM</item>
+        <item>QA/테스터/검증</item>
+        <item>게임</item>
+        <item>ERP/시스템분석/설계</item>
+        <item>빅데이터/AI</item>
+        <item>SW/HW</item>
+    </string-array>
+    <string-array name="spinner_do_design">
+        <item>그래픽디자인/CG</item>
+        <item>제품/산업디자인</item>
+        <item>캐릭터/애니메이션</item>
+        <item>광고/시각디자인</item>
+        <item>의류/패션/잡화 디자인</item>
+        <item>전시/공간 디자인</item>
+    </string-array>
+    <string-array name="spinner_do_service">
+        <item>제품/서비스영업</item>
+        <item>금융/보안영업</item>
+        <item>IT/솔루션/기술영업</item>
+        <item>영업관리/지원/기획</item>
+        <item>광고영업</item>
+        <item>CS관리/CRM</item>
+        <item>아웃바운드/인바운드</item>
+    </string-array>
+    <string-array name="spinner_do_trade">
+        <item>해외영업/무역영업</item>
+        <item>수출입</item>
+        <item>상품기획/MD</item>
+        <item>유통/물류/재고</item>
+    </string-array>
+    <string-array name="spinner_do_search">
+        <item>자동차/조선/기계</item>
+        <item>반도체/디스플레이</item>
+        <item>화학/에너지/환경</item>
+        <item>전기/전자/제어</item>
+        <item>기계설계/CAP/CAM</item>
+        <item>통신기술/네트워크구축</item>
+        <item>바이오/제약/식품</item>
+    </string-array>
+    <string-array name="spinner_do_construction">
+        <item>건축/설계/인테리어</item>
+        <item>시공/현장/감리/공무</item>
+        <item>토목/조경/도시/측량</item>
+        <item>전기/소방/통신/안전</item>
+        <item>환경/플랜트</item>
+    </string-array>
+
+
+</resources>
